@@ -1,1 +1,3 @@
 # desafioDoWhile
+
+Projeto vai abordar uma plataforma que conterá um amontoado de cursos, videoaulas gratuitas sobre diversos temas. Eu criei todo o site em Bootstrap e Sass mas depois que percebi que nao podia usar framework tive que recriar tudo, por isso essa parte do conteudo ainda está em manutencao :( Estou refazendo tudo em html,css e js puro por isso está faltando algumas funcionalidiades e conteudo principal,caso voces cheguem a avaliar e eu ainda nao tenha conseguido atualizar tudo segue link com deploy em bootstrap e Sass pra vocês terem uma ideia de como ficaria: https://dowhiledesafiobootstrap.andradeviniiciu.repl.co
