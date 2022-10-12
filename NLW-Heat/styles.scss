@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ 
+// Header
+body {
+  background-color: #f5f5f5;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  font-family: "Roboto",cursive;
+  padding: 10px;
+  color: white;
+  transition: .4s ease-in-out;
+  a{
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    font-size: 18px;
+    margin-left: 10px ;
+    font-weight: 700;
+    text-align:end;
+    cursor: pointer;
+    
+    // Projeto Botão de login
+
+    // button {
+    //     border: none;
+    //     color: white;
+    //     font-weight: 600;
+    //     background: linear-gradient(90deg, hsla(242, 99%, 28%, 1) 0%, hsla(278, 95%, 35%, 1) 50%, hsla(302, 100%, 49%, 1) 100%);
+    //     border-radius: 4px;
+    //     padding: 0px 15px;
+    //     width: 100px;
+    //     height: 35px;
+    //     text-align: center;
+    //     cursor: pointer;
+    
+      // }
+      text-decoration: none;
+    }
+  
+  
+  .headerLogo {
+    align-items: flex-end;
+    h1 {
+      font-size: 18px;
+      margin-left: 10px ;
+      font-weight: 700;
+      display: flex;
+      align-items:flex-end;
+    }
+    img {
+      content: url("https://www.pngkit.com/png/full/213-2132844_experience-the-discussion-online-library-book-logo-png.png");
+      filter: invert(29%) sepia(77%) saturate(7488%) hue-rotate(210deg) brightness(96%) contrast(91%);
+    }
+  }
+  .nav-links {
+    display: flex;
+    padding: 12px 12px;
+    justify-content: flex-end;
+    width: 35%;
+    a {
+      color: grey;
+    }
+    a:hover {
+      color: white;
+    }
+    li {
+      display: flex;
+      margin: 0px 10px 0px 10px;
+      list-style: none;
+      justify-content: center;
+      position: relative;
+      top: 4px;
+    }
+  }
+  .sideButton {
+    display: none;
+  }
+  .sideButton div {
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    margin: 3px;
+    transition: all 0.3s ease;
+  }  
+}
+
+@media screen and (max-width: 1024px) {
+
+  .nav-links{
+    width: 60%
+  };
+
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  
+  nav {
+    justify-content: space-between ;
+    
+    .sideButton {
+      display: block;
+      cursor: pointer;
+    }
+    .nav-links {
+      justify-content: flex-start;
+    }
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    justify-content: space-around;
+  }
+  .nav-links li {
+    opacity: 0;
+    padding: 10px 0px;
+  }
+}
+
+.headerLogo {
+  display: flex;
+  letter-spacing: 1px;
+  font-weight: 700;
+  align-items: center;
+  img {
+    width: 60px;
+    height: 30px;
+  }
+}
+
+.nav-active{
+  transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px,3px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px,-3px);
+}
+
+.bgDark {
+  background-color: #212529;
+}
+.bgTransparent {
+  background-color: transparent;
+}
+
+// Header
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Introduction content
+.main-banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("https://i.pinimg.com/originals/51/95/eb/5195ebb8c5f9772deda82aa2937134d3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 45px;
+  h1 {
+    font-family: "Luxurious Script", "Roboto",sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 84px;
+    color: #0b5ed7;
+  }
+  p {
+    margin: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 6px;
+    text-align: center;
+  }
+
+  button {
+    margin-top: 0px;
+    border: 1px solid #0b5ed7;
+    background: rgba(51, 187, 105, 0.05);
+    color: white;
+    padding: 10px;
+    width: 322px;
+    height: 71px;
+    border-radius: 4px;
+    font-size: 25px;
+    letter-spacing: 0.06em;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      filter: brightness(150%);
+    }
+  }
+}
+
+// Main content
+.contentContainer {
+  margin: 20px;;
+}
+
+
+
+
+footer {
+  background-color: #212529;
+  font-family: Roboto;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  .userInfo{
+    display: flex;
+    // background-color: red;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    margin: 0px 32px;
+    width: 80%;
+    height: 80%;
+  }
+  .footerDivImg {
+    display: flex;
+    align-items: flex-start;
+    height: 105px;
+    width: 1fr;
+    #viniImg {
+      background-image: url(https://avatars.githubusercontent.com/u/83192227?v=4);
+      background-size: cover;
+      background-position: center;
+      width: 80px;
+      height: 80px;
+    }
+    }
+    .footerDivAuthor{
+      justify-content: space-around;
+      align-items: flex-start;
+      height: 100%;
+      padding: 0px 12px;
+      width: 2fr;
+      h2 {
+        color: #FFFFFF;
+      }
+      p {
+        // font-size: 10px;
+        color: #FFFFFF;
+        font-weight: 400;
+      }
+      .gitImg{
+        content: url(../images/github-icon.svg);
+      }
+      .linkImg{
+        content: url(../images/linkedin-3-16.png);
+      }
+    }
+  }
+
+@media screen and (max-width: 870px) {
+  .userInfo {
+    // background-color: red;
+    display: inline;
+  }
+  
+// @media (max-width: 991px) {
+//   .navbar ul li a {
+//     text-align: center;
+//   }
+//   .navbar .loginBtn {
+//     width: 100%;
+//     margin: 0;
+//   }
+// }
+}
