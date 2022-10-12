@@ -1,0 +1,119 @@
+/*Cascating Stylesheet*/
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+
+ 
+  --grey: hsla(240, 9%, 89%, 1);
+  --grey2: hsla(240, 7%, 78%, 1);
+  /* 
+  Hue         Cor em si
+  Saturation  Sem cor com cor
+  Light       Claro escuro
+  
+  */
+
+
+  display: grid;
+  place-items: center;
+}
+
+main {
+  background: url("images/background.svg");
+  /* background-color: #202024; */
+  width: 375px;
+  height: 812px;
+
+}
+
+.content {
+  max-width: 250px;
+  margin-left: auto ;
+  margin-right: auto;
+  text-align: center;
+
+  color: var(--grey)
+}
+
+.logo {
+  width: 10rem;
+  margin: 11.5rem auto 0;
+  /*
+  4x Relogio top right bot left
+  
+  */
+  position: relative;
+}
+
+.logo span {
+  position: absolute;
+  top: -15; 
+  z-index: 1;
+}
+
+.logo > img {
+  width: 10rem;
+  height: 11.5rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 99% 25.5%, 100% 74.5%, 50% 100%, 0 74.5%, 0 25.5%);
+}
+.logo p {
+  font-size: 0.5rem;
+  position: absolute;
+  text-shadow: 10px;
+  top: 120;
+  left: 157;
+  z-index: 2;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+a {
+  /* font-family: Roboto Light; */
+  color: hsla(240, 7%, 78%, 1);
+  font-size: 1rem;
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.userDescription {
+  font-size: 0.875rem;
+  margin-top: 2rem;
+  /* font: 'Roboto' ; */
+}
+
+.userMedia {
+  margin-top: 4rem;
+justify-content: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  /* muda propriedades dos elementos para bloco, é mais complexo do que isso mas  */
+  /* flex-direction: column; */
+  gap: 0.5rem;
+
+  justify-content: center;
+}
